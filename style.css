@@ -1,14 +1,21 @@
 body {
-    background-color: #191414;
+    /* background-color: #191414; */
+    background-image: linear-gradient(#191414, #9bbaff);
     /* background-image: url(/assets/Screenshot\ 2022-07-12\ at\ 21.45.09.png);
     background-size: 1500px;
     height: 1200px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 #Paul {
     border-radius: 50%;
     width: 300px;
     margin: 100px;
+    background-color: white;
 }
 
 h1 {
@@ -30,9 +37,10 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.playlist {
+.playlist-section {
     background-color: black;
-    margin: 0;
+    /* margin: 0; */
+    padding: 20px 0px 20px 0px;
 }
 
 #playlist-pic {
@@ -45,8 +53,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     border-radius: 5%;
+    width: 300px;
+    background-color: #0e0c0c;
+    padding: 20px 0px 60px 0px;
 }
 
 .container:hover {
@@ -74,6 +85,7 @@ a:hover, a:visited, a:active {
 
 #in-playlist-name {
     font-size: 50px;
+    padding-left: 20px;
 }
 
 .song {
@@ -81,8 +93,70 @@ a:hover, a:visited, a:active {
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 18px;
 }
 
 .playlist-header {
-    margin-left: 3%;
+    padding: 2%;
+    background-image: linear-gradient(rgb(30, 117, 151), black);
 }
+
+.playlist {
+    display: flex;
+    justify-content: center;
+    /* max-width: 300px; */
+}
+
+#public-playlists {
+    position: relative;
+    left: 24px;
+}
+
+.songs-section {
+    background-color: black;
+    padding: 1px 0px 20px 0px;
+}
+
+#back-arrow {
+    width: 30px;
+    background: white;
+    border-radius: 70%;
+}
+
+.song:hover {
+    background-color: #191414;
+}
+
+.songs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #888888;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#in-playlist-pic {
+    width: 250px;
+    height: 250px;
+}
+
+.number {
+    position: absolute;
+    left: 23.5%;
+}
+
+.song-name {
+    position: absolute;
+    left: 47.5%;
+}
+
+.artist {
+    position: absolute;
+    right: 24%;
+}
+
+/* Add back button to and style every single bday message and add responsiveness w mobile queries*/
