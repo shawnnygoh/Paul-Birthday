@@ -33,7 +33,7 @@ h1 {
     color: white;
 }
 
-#profile {
+.profile {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -156,7 +156,147 @@ a:hover, a:visited, a:active {
 
 .artist {
     position: absolute;
-    right: 24%;
+    left: 73%;
 }
 
 /* Add back button to and style every single bday message and add responsiveness w mobile queries*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 20px;
+    left: -20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 769px) {
+    #Paul {
+        border-radius: 50%;
+        width: 260px;
+        margin: 20px;
+        background-color: white;
+    }
+
+    .left-right {
+        flex-direction: column;
+    }
+
+    .profile-desc {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #profile-text {
+        visibility: hidden;
+    }
+
+    #in-playlist-name {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    .number {
+        position: absolute;
+        left: 20.5%;
+    }
+
+    .song-name {
+        position: absolute;
+        left: 41%;
+    }
+
+    .artist {
+        position: absolute;
+        left: 69%;
+    }
+
+    #in-playlist-name {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+    .number {
+        position: absolute;
+        left: 22%;
+    }
+
+    .song-name {
+        position: absolute;
+        left: 43.5%;
+    }
+
+    .artist {
+        position: absolute;
+        left: 70%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 680px) {
+    .number {
+        position: absolute;
+        left: 22.5%;
+    }
+
+    .song-name {
+        position: absolute;
+        left: 44.5%;
+    }
+
+    .artist {
+        position: absolute;
+        left: 71%;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 769px) {
+    .number {
+        position: absolute;
+        left: 23%;
+    }
+
+    .song-name {
+        position: absolute;
+        left: 45.5%;
+    }
+
+    .artist {
+        position: absolute;
+        left: 71.5%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #public-playlists {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .song-name {
+        position: absolute;
+        left: 46%;
+    }
+}
