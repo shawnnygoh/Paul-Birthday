@@ -216,17 +216,17 @@ a:hover, a:visited, a:active {
 }
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {
-    .number {
+    .number, .NUMBER {
         position: absolute;
         left: 20.5%;
     }
 
-    .song-name {
+    .song-name, .TITLE {
         position: absolute;
-        left: 41%;
+        left: 35.5%;
     }
 
-    .artist {
+    .artist, .ARTIST {
         position: absolute;
         left: 69%;
     }
@@ -238,34 +238,34 @@ a:hover, a:visited, a:active {
 }
 
 @media only screen and (min-width: 450px) and (max-width: 550px) {
-    .number {
+    .number, .NUMBER {
         position: absolute;
         left: 22%;
     }
 
-    .song-name {
+    .song-name, .TITLE {
         position: absolute;
-        left: 43.5%;
+        left: 40.5%;
     }
 
-    .artist {
+    .artist, .ARTIST {
         position: absolute;
         left: 70%;
     }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 680px) {
-    .number {
+    .number, .NUMBER {
         position: absolute;
         left: 22.5%;
     }
 
-    .song-name {
+    .song-name, .TITLE {
         position: absolute;
-        left: 44.5%;
+        left: 41.5%;
     }
 
-    .artist {
+    .artist, .ARTIST {
         position: absolute;
         left: 71%;
     }
